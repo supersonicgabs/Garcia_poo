@@ -1,0 +1,17 @@
+
+public class ihc {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Churrasco c =  new Churrasco();
+		
+		Pessoa p1 = new Pessoa();
+		p1.idade = 12;
+		p1.nome = "Jose";
+		p1.sexo = "m";
+		p1.vegetariana =false;
+		
+
+	}
+
+}

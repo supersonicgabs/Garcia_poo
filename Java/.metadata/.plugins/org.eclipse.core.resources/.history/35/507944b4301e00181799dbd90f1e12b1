@@ -1,0 +1,15 @@
+
+public class Churrasco {
+	
+	double qtdCarne;
+
+	void verificarConsumo(Pessoa p) {
+		if(p.idade <= 3 || p.vegetariana)
+			System.out.println("Pessoa n consumira carne");
+		else
+			if(p.idade <= 12) {
+				System.out.println("Pessoa consome 1kg de carne");
+			}
+				
+	}
+}
