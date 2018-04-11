@@ -40,7 +40,7 @@ public class ihc {
 		c.verificarConsumo(p3);
 		c.verificarConsumo(p4);
 		c.verificarConsumo(p5);
-		
+		//ihc
 
 	}
 
