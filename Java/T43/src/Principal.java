@@ -1,5 +1,5 @@
 
-public class Teste {
+public class Principal {
 
 		public static void main (String [] args) {
 			Produto p = new Produto("Camisa Paisley",500,new IPI("Desconto IPI"));
