@@ -1,5 +1,5 @@
 
-public class IPI extends Promocao{
+public class IPI extends Desconto{
 	
 	public IPI(String desc) {
 		super(desc);

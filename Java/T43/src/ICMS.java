@@ -1,5 +1,5 @@
 
-public class ICMS extends Promocao{
+public class ICMS extends Desconto{
 	
 	public ICMS(String desc) {
 		super(desc);

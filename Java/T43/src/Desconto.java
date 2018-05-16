@@ -1,10 +1,10 @@
 
-public class Promocao {
+public class Desconto {
 
 		private String desc;
 
 		
-		public Promocao(String desc) {
+		public Desconto(String desc) {
 			this.desc = desc;
 		}
 
