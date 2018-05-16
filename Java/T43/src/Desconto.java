@@ -13,7 +13,6 @@ public class Desconto {
 			return desc;
 		}
 		
-//Nao sei como calcular descontos em uma promocao generica. Aqui eu dependo de subclasses de promocao
 		public double desconto(double valor) {
 			return 1.0;
 		}
