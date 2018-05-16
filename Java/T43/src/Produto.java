@@ -1,43 +1,31 @@
 
 public class Produto {
-	private String nome;
-	private double preco;
-	private double des;
-	private double s;
-	Tipo tipo;
 	
-	
-	public Produto(String nome, double preco, Tipo tipo) {		
-		this.nome = nome;
-		this.tipo = tipo;
-		
-		if(this.tipo == Tipo.IPI)
-		{
-			this.des = 5;
+		private String nome;
+		private double preco;
+		private Promocao promocao;
+		public Produto(String nome, double preco, Promocao promocao) {
+			this.nome = nome;
+			this.preco = preco;
+			this.promocao = promocao;
+		}
+		public void setPromocao(Promocao promocao) {
+			this.promocao = promocao;
 		}
 		
-		else if(this.tipo == Tipo.ICMS)
-		{
-			this.des = 10;
-		}		
-				
-		this.s=100-des;
-		this.preco = (s*preco/100);		
-	}
-	
-	public String getNome() {
-		return nome;
-	}
-	public double getPreco() {
-		return preco;
-	}
-
+		public double calcularPreco() {
+			
+//A vinculacao dinamica vai chamar o calculo do desconto de acordo com o objeto atrelado à variavel promocao
+// do tipo promocao. O polimorfismo ajudou com a abertura de outras promocoes a serem atreladas a este
+//atributo.			
+			return preco * promocao.desconto(preco);
+			
+		}
 		
-	
-	public void mostrar() {		
-		System.out.println("Nome do produto: " + nome);		
-		System.out.println("Preço do produto: " + preco);
-		System.out.println("~~~~~~~~~~~~~~~~~~");
-	}	
-	
+		public void mostrar() {		
+			System.out.println("Nome do produto: " + nome);		
+			System.out.println("Preço do produto: " + preco * promocao.desconto(preco));
+			System.out.println("~~~~~~~~~~~~~~~~~~");
+		}	
+		
 }
