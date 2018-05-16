@@ -15,9 +15,6 @@ public class Produto {
 		
 		public double calcularPreco() {
 			
-//A vinculacao dinamica vai chamar o calculo do desconto de acordo com o objeto atrelado à variavel promocao
-// do tipo promocao. O polimorfismo ajudou com a abertura de outras promocoes a serem atreladas a este
-//atributo.			
 			return preco * desconto.desconto(preco);
 			
 		}
